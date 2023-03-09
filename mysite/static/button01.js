@@ -1,5 +1,5 @@
 const docStyle = document.documentElement.style
-const aElem = document.querySelector('a')
+const aElem = document.querySelector('.bt1')
 const boundingClientRect = aElem.getBoundingClientRect()
 
 aElem.onmousemove = function(e) {

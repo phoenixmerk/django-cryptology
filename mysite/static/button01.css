@@ -1,5 +1,7 @@
-a {
-  position: relative;
+.bt1 {
+  position: absolute;
+  top: 5px;
+  right: 5px;
   display: inline-block;
   padding: 1.2em 2em;
   text-decoration: none;
@@ -7,8 +9,8 @@ a {
   cursor: pointer;
   user-select: none;
   color: white; }
-  a::before {
-    content: "";
+  .bt1::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -16,19 +18,19 @@ a {
     right: 0;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     border-radius: 4px;
-    transition: box-shadow 0.5s ease, transform 0.2s ease;
+    transition: box-shadow .5s ease, transform .2s ease;
     will-change: transform;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px)); }
-  a:hover::before {
+  .bt1:hover::before {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
-  a::after {
+  .bt1::after {
     position: relative;
     display: inline-block;
     content: attr(data-title);
-    transition: transform 0.2s ease;
+    transition: transform .2s ease;
     font-weight: bold;
-    letter-spacing: 0.01em;
+    letter-spacing: .01em;
     will-change: transform;
     transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)); }
 
@@ -38,6 +40,7 @@ body {
   justify-content: center;
   height: 100vh;
   transform-style: preserve-3d;
-  transform: perspective(800px); }
+  transform: perspective(800px);
+  }
 
 /*# sourceMappingURL=button01.css.map */

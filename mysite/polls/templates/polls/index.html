@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-{% load sass_tags %}
 <html lang="en">
 <head>
+    {% load sass_tags %}
+    {% load static %}
     <meta charset="UTF-8">
     <title>welcome</title>
-    <link href="{% sass_src 'button01.scss' %}" rel="stylesheet" type="text/css" />
+    <link href="{% sass_src 'button01.scss' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'rbox.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <a href="https://github.com/phoenixmerk" data-title="Make friend"></a>
+    <form action="clipher" class="base_title" method="post">
+    <div class="base_title" style="letter-spacing:5px">
+        {% csrf_token %}
+        <h1>BASE64</h1>
+        <input style="letter-spacing:5px" class="box" type="text" name="p_text" value="{{p_text}}">
+    </div>
+        <input style="letter-spacing:1px" class="encode_button" type="submit" name="encode" value="encode">
+        <input style="letter-spacing:1px" class="decode_button" type="submit" name="decode" value="decode">
+    </form>
+    <a class="bt1" href="https://github.com/phoenixmerk" data-title="contact me">
+    </a>
 </body>
     {% load static %}
     <script src="{% static 'button01.js' %}"></script>

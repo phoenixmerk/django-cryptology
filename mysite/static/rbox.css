@@ -1,0 +1,37 @@
+/* <div class="box"></div>*/
+.box{
+    position: relative;
+    font-family: Arial Rounded MT;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 20px auto;
+    }
+.base_title{
+    position: absolute;
+    top: 50px;
+    font-family: Arial Rounded MT;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+}
+.encode_button{
+    position: relative;
+    bottom: -295px;
+    right: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    }
+.decode_button{
+    position: relative;
+    bottom: -295px;
+    right: -23px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    }
