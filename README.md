@@ -5,7 +5,7 @@ An easy cryptology web.
 
 It can work for Base64 encode/decode,and it can be an example webapp using Django.
 
-![0753d3e1fc943b0997aeede2212fd2e](C:\Users\admin\Desktop\code\django-cryptology\website.png)
+![WEBSITE](C:\Users\admin\Desktop\code\django-cryptology\website.png)
 
 
 
