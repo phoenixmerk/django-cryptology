@@ -20,7 +20,18 @@
     </form>
     <a class="bt1" href="https://github.com/phoenixmerk" data-title="contact me">
     </a>
-</body>
+    {% if messages %}
+    <script>
+    window.onload=function(){
+            var warn_msg = document.getElementById('warn');
+			{% for msg in messages %}
+				alert('{{msg.message}}');
+			{% endfor  %}
+        }
+    </script>
+    {%  endif %}
     {% load static %}
     <script src="{% static 'button01.js' %}"></script>
+</body>
+
 </html>
